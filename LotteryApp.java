@@ -19,7 +19,7 @@ public class LotteryApp {
             }
         }
 
-        System.out.println();
+        System.out.println("---user---");
         userNumber.forEach(System.out::println);
 
         while (winningNumbers.size() < 6) {
@@ -27,7 +27,12 @@ public class LotteryApp {
             winningNumbers.add(winningInput);
         }
 
-        System.out.println();
+        System.out.println("---random---");
+        winningNumbers.forEach(System.out::println);
+
+        winningNumbers.retainAll(userNumber);
+        System.out.println("---retainAll---");
+        System.out.println("Your correct numbers:");
         winningNumbers.forEach(System.out::println);
     }
 }
