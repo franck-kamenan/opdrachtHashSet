@@ -19,5 +19,6 @@ public class PersonApp {
         personCol.add(p4);
 
         personCol.forEach(System.out::println);
+        System.out.println(p2.equals(p3));
     }
 }
