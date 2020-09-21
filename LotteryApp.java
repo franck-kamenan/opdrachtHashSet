@@ -34,5 +34,16 @@ public class LotteryApp {
         System.out.println("---retainAll---");
         System.out.println("Your correct numbers:");
         winningNumbers.forEach(System.out::println);
+
+        System.out.println("---retainAll---With---ArrayList");
+        Collection<Integer> col = new ArrayList<>();
+        col.add(10);
+        col.add(10);
+
+        Collection<Integer> col2 = new ArrayList<>();
+        col2.add(10);
+
+        col.retainAll(col2);
+        col.forEach(System.out::println);
     }
 }
