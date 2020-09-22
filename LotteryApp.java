@@ -8,8 +8,8 @@ public class LotteryApp {
 
         Scanner keyboard = new Scanner(System.in);
         Random rng = new Random();
-        Collection<Integer> userNumber = new HashSet<>();
-        Collection<Integer> winningNumbers = new HashSet<>();
+        Collection<Integer> userNumber = new LinkedHashSet<>();
+        Collection<Integer> winningNumbers = new LinkedHashSet<>();
 
         System.out.println("Give 6 unique numbers between 1 and 45.");
         while (userNumber.size() < 6) {
